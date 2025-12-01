@@ -1,1 +1,71 @@
 /* Start coding here */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#container {
+    padding: 20px;
+}
+
+#tag {
+    position: absolute;
+    color: white;
+    font-style: italic;
+    left: 93%;
+    top: -5%;
+    background-color: #bfbfbf;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: #808080;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+}
+
+.container-chat-box {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-radius: 35px;
+    width: 250px;
+    height: 50px;
+    background-color: #08bf08; 
+    position: relative;
+    top: 2rem;
+    font-size: 15px;
+}
+
+.action {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 10px;;
+}
+
+.response {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.response .container-chat-box {
+    background-color: #808080;
+}
+
+#second-chat {
+    background-color: #e7e3e2;
+}
