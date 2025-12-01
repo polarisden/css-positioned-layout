@@ -6,15 +6,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
-  <script src="https://kit.fontawesome.com/bf7220ad33.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <title>Positioned Layout Exercise 2 TechUp Chatroom</title>
 </head>
 
 <body>
-  <!-- Start coding here -->
+  <header class="chat-header">
+    <div class="chat-header__inner">
+      <h1 class="chat-title">Techup Chatroom</h1>
+    </div>
+  </header>
+
+  <main class="chat-grid" ">
+    <article class="chat-row chat-row--right">
+      <div class="message message--right message--primary">
+        <p class="message__text">สวัสดีจ้า</p>
+      </div>
+    </article>
+
+    <article class="chat-row chat-row--right">
+      <div class="message message--right message--secondary">
+        <p class="message__text">Coding สนุกจังเลย</p>
+        <button class="message__close" type="button" >×</button>
+      </div>
+    </article>
+
+    <article class="chat-row chat-row--right">
+      <div class="message message--right message--primary">
+        <p class="message__text" >🥳 😍</p>
+      </div>
+    </article>
+
+    <article class="chat-row chat-row--left">
+      <div class="message message--left">
+        <p class="message__text" >😍</p>
+      </div>
+    </article>
+
+    <article class="chat-row chat-row--left">
+      <div class="message message--left">
+        <p class="message__text" >😘</p>
+      </div>
+    </article>
+  </main>
 </body>
 
 </html>

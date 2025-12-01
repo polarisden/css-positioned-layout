@@ -1,1 +1,96 @@
-/* Start coding here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sarabun", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Header */
+.chat-header {
+  background-color: #777777;
+  padding-block: 10px;
+}
+
+.chat-header__inner {
+  max-width: 1200px;
+  padding-inline: 16px;
+}
+
+.chat-title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Chat layout */
+.chat-grid {
+  padding: 40px;
+  display: grid;
+  column-gap: 5px;
+  row-gap: 8px;
+}
+
+.chat-row {
+  display: flex;
+}
+
+.chat-row--left {
+  grid-column: 1 / 2;
+  justify-content: flex-start;
+}
+
+.chat-row--right {
+  grid-column: 2 / 3;
+  justify-content: flex-end;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  width: 260px;
+  border-radius: 999px;
+  padding: 10px 24px;
+}
+
+.message__text {
+  font-size: 16px;
+}
+
+.message--left {
+  background-color: #777777;
+  color: #ffffff;
+}
+
+.message--right {
+  color: #ffffff;
+  justify-content: flex-หะฟพะ;
+}
+
+.message--primary {
+  background-color: #00b01e;
+}
+
+.message--secondary {
+  position: relative;
+  background-color: #f3f3f3;
+  color: #000000;
+}
+
+.message__close {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  border: none;
+  background-color: #d1d1d1;
+  color: #555555;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: default;
+}
