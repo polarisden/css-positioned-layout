@@ -1,5 +1,75 @@
-body {
-  font-family: "Kanit";
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap");
+
+:root {
+  --card-width: 520px;
+  --card-height: 260px;
+  --badge-bg: rgba(104, 104, 104, 0.9);
+  --caption-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.85) 85%
+  );
 }
 
-/* Start coding here */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  background: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tea-card {
+  position: relative;
+  width: var(--card-width);
+  height: var(--card-height);
+  margin: 0;
+  border: 4px solid #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.55);
+}
+
+.tea-card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.tea-card__caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 22px 16px;
+  font-size: 20px;
+  background: var(--caption-gradient);
+}
+
+.tea-card__badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: var(--badge-bg);
+  padding: 6px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #fff;
+}
