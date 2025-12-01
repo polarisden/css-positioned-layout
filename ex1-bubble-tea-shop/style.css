@@ -3,3 +3,71 @@ body {
 }
 
 /* Start coding here */
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-content {
+  border: 10px solid white;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  max-width: 620px;
+}
+
+img[src="./preview-img.jpeg"] {
+  border-radius: 12px;
+  position: relative;
+  z-index: 0;
+}
+
+.container-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 55%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  z-index: 1;
+}
+
+.container-content-text {
+  position: absolute;
+  bottom: -10px;
+  color: white;
+  padding: 24px 28px 15px 10px;
+  font-size: 22px;
+  font-weight: 500;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+
+.container-content-text-location {
+  position: absolute;
+  top: 20px;
+  right: 00px;
+  background: rgba(126,125,128, 0.9);
+  padding: 8px 18px;
+  font-size: 18px;
+  z-index: 2;
+  font-size: 20px;
+  color: white;
+}
