@@ -69,3 +69,36 @@ header {
 #second-chat {
     background-color: #e7e3e2;
 }
+
+#first-caht {
+    position: relative;
+}
+
+#first-circle,#second-circle {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+#first-circle {
+    background-color: #08bf08;
+    color: #08bf08;
+    right: -12px;
+    bottom: 20px;
+    z-index: -2;
+}
+
+#second-circle {
+    background-color: white;
+    color : white;
+    width: 70px;
+    height: 70px;
+    right: -20px;
+    bottom: 30px;
+    z-index: -1;
+}
+
